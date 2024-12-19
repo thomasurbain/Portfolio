@@ -1,0 +1,323 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Navbar */
+header {
+    position: sticky;
+    z-index:10;
+    top: 0;
+    background: #283048;
+    opacity: 0.95;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #1cb5e0;
+}
+
+header nav ul li a:active {
+    color: #000046;
+}
+
+/* Sections */
+section {
+    padding: 4rem 0;
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* Projets */
+.galerie {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.projet {
+    background: #fdc830;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40rem;
+    transition: transform 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color:#000046;
+}
+
+.projet:hover {
+    transform: scale(1.05);
+}
+
+.projet iframe {
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.projet img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.projet p {
+    font-size: 1.1rem;
+}
+
+/* CV */
+.competences ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.competences ul li {
+    font-size:1.25rem;
+}
+
+.competences h3, .competences h4 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.competences h3 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+.formations ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.formations ul li {
+    font-size: 1.25rem;
+}
+
+.formations h3, .formations h4 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.formations h3 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+.telecharger {
+    display: flex;
+    justify-content: center;
+    color:#ff9000;
+    text-decoration-color: #ff9000;
+    font-size: 1.7rem;    
+    transform:scale(1);
+    transition: transform 0.3s ease;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.telecharger :hover {
+    display: flex;
+    justify-content: center;
+    color:rgb(255, 247, 0);
+    text-decoration-color: rgb(255, 247, 0);    
+    transform:scale(1);
+    transition: transform 0.3s ease;
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+
+.telecharger :active {
+    display: flex;
+    justify-content: center;
+    color:rgb(128, 0, 255);
+    text-decoration-color: rgb(128, 0, 255); 
+    transform:scale(1.05);
+    transition: transform 0.3s ease;
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+
+.diplome {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.module {
+    background: #fdc830;
+    padding: 20px;
+    border-radius: 8px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.module :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease
+}
+
+.module :active {
+    transform: scale(0.95);
+    transition: transform 0.3s ease
+}
+
+.module img {
+    width: 421px;
+    height: 295px;
+}
+
+/* Veille informatique */
+
+.Veille {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Passions */
+
+
+
+.section-passions ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section-passions ul li {
+    font-size: 1.25rem;
+}
+
+.passion-video{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+
+
+/* Footer */
+footer {
+    background: #283048;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .galerie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projet {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .module {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .module img {
+        width: 80%;
+        height:80%;
+    }
+
+    video {
+        width: 80%;
+        height:80%;
+    }
+
+
+    .passion-video {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projet iframe {
+        width: 80%;
+        height:80%;
+    }
+
+   h2 {
+    font-size:3rem;
+   }
+}
